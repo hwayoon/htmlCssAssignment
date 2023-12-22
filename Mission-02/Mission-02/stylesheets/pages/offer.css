@@ -1,0 +1,97 @@
+/* 오늘의 쇼핑 제안 */
+header{
+    width: 1020px;
+    margin: 100px auto 48px;
+}
+section{
+    width: 1020px;
+    margin: auto;
+}
+.logo{
+    height: 40px;
+}
+.today_suggestion{
+    display:flex;
+    align-items:center;
+    margin-bottom:15px;
+}
+.shopping_logo{
+    width:30px;
+    height:30px;
+    background-image: url(../../assets/icon/shopping.svg);
+    background-repeat:no-repeat;
+}
+.today_suggestion_cards{
+    display:flex;
+    align-content:center;
+    justify-content:space-between;
+}
+.today_card{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    width:200px;
+    height:270px;
+    position:relative;
+}
+.discount_info{
+    position: absolute;
+    left:0;
+    top:0;
+    background-color: var(--color-red-500);
+    width:53px;
+    height:30px;
+    color: var(--color-white);
+    text-align:center;
+    padding:5px;
+    border-bottom-right-radius: 15%;
+}
+.card_img{
+    width:160px;
+    height:160px;
+}
+.product_name{
+    display: inline-block;
+    white-space:nowrap;
+    height:18.39px;
+    width:193px;
+    text-overflow:ellipsis;
+    overflow:hidden;
+}
+.card_bottom{
+    width:auto;
+    margin-top: 15px;
+    display:flex;
+    flex-direction: column;
+}
+.rocket_shipping, .free, .star_review_box{
+    margin-top:8px;
+}
+.free, .reviews{
+    color:var(--color-gray-700);
+}
+.rocket_shipping{
+    width:55px;
+}
+.star_review_box{
+    display:flex;
+    align-items:center;
+}
+.rating_stars{
+    width:68px;
+    height:14px;
+    background-image: url(../../assets/sprites/rating-stars.png);   
+    background-repeat: no-repeat;
+}
+.reviews{
+    margin-left:8px;
+}
+.half_minus{
+    background-position-y:90%;
+}
+.one_minus{
+    background-position-y:80%;
+}
+.full_stars{
+    background-position-y: bottom;
+}

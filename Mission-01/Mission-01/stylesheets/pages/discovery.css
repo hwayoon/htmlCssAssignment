@@ -1,0 +1,72 @@
+header{
+    display:flex;
+    width: 1020px;
+    margin: 100px auto 48px;
+}
+.discovery_text h2{
+    margin-right: 10px;
+}
+#bar, .discovery h4 {
+    color: var(--color-gray);
+}
+.discovery{
+    box-sizing: border-box;
+    width:1020px;
+    height:1010px;
+    margin: 0 auto;
+}
+.discovery_text{
+    display: flex;
+    align-items:center;
+}
+.discovery_text h3{
+    margin-right: 10px;
+}
+.big_img, .normal_img{
+    position: relative;
+}
+
+.purchase::before{
+    content: '>';
+    box-sizing:border-box;
+    position: absolute;
+    bottom: 25px;
+    left:25px;
+    width: 45px;
+    height: 45px;
+    padding:10px;
+    text-align:center;
+    color: var(--color-white);
+    background-color: rgba(0,0,0,0.2);
+    outline:none;
+    overflow:hidden;
+}
+.purchase:hover::before, .purchase:focus::before{
+    content:'구매하기 >';
+    width:110px;
+    background-color:var(--color-blue);
+    overflow:visible;
+}
+.purchase{
+    border: 1px solid var(--color-gray);
+    padding: 15px 12px;
+    margin: 10px;
+}
+.purchase:hover, .purchase:focus{
+    border-color: var(--color-blue);
+    outline:none;
+}
+.purchase, .purchase::before{
+    transition:all 1s ease-in-out;
+}
+.normal_img{
+    float:left;
+}
+.big_img{
+    float: left;
+}
+
+#wet_tissue_img{
+    padding-bottom:6px;
+    padding-top:6px;
+}

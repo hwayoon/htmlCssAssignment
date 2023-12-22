@@ -1,0 +1,66 @@
+header, .today_recommendation{
+    width:1022px;
+    margin: auto;
+}
+h2{
+    margin:0;
+}
+header h1{
+    margin-top: 80px;
+    margin-bottom:48px;
+}
+.recommendations{
+    display:flex;
+    margin:0;
+}
+.recommendation_text1, .recommendation_text2{
+    margin:0;
+}
+.recommendation_text2{
+    color:var(--color-blue-600);
+}
+.left_section{
+    width:174px;
+    display:flex;
+    flex-direction:column;
+}
+.left_section>h2{
+    font-weight:400;
+    color:var(--color-green-700);
+}
+.houseware>.left_section>h2{
+    color:var(--color-brown-300);
+}
+.houseware, .kitchenware{
+    width:1022px;
+    height:634px;
+    margin:auto;
+    margin-top:24px;
+    display:flex;
+}
+.shortcuts{
+    font-size:1.4rem;
+    color: var(--color-gray-700);
+    font-weight:bold;
+}
+.hot_keyword{
+    font-size:1.2rem;
+    width:fit-content;
+    padding:6px 10px;
+    color: var(--color-brown-300);
+    border:1px solid var(--color-gray-400);
+}
+/* carousel */
+.carousel{
+    width:320px;
+    height:631px;
+}
+
+.each_card{
+    display:inline-block;
+    width:160px;
+    height:300px;
+}
+.info{
+    font-size:1.4rem;
+}
