@@ -19,6 +19,22 @@ header h1{
 .recommendation_text2{
     color:var(--color-blue-600);
 }
+.houseware, .kitchenware{
+    width:1022px;
+    height:634px;
+    margin:auto;
+    margin-top:24px;
+    display:flex;
+    box-sizing:border-box;
+    border-top:1px solid;
+    border-bottom:1px solid;
+}
+.houseware{
+    border-color:var(--color-brown-300);
+}
+.kitchenware{
+    border-color:var(--color-green-700);
+}
 .left_section{
     width:174px;
     display:flex;
@@ -27,21 +43,24 @@ header h1{
 .left_section>h2{
     font-weight:400;
     color:var(--color-green-700);
+    margin-top:50px;
 }
 .houseware>.left_section>h2{
     color:var(--color-brown-300);
 }
-.houseware, .kitchenware{
-    width:1022px;
-    height:634px;
-    margin:auto;
-    margin-top:24px;
-    display:flex;
+.left_section h3{
+    margin-top:240px;
+    margin-bottom:20px;
 }
 .shortcuts{
     font-size:1.4rem;
     color: var(--color-gray-700);
     font-weight:bold;
+    margin-top:8px;
+    background-image:url(../../assets/icon/angle-right-default.svg);
+    background-repeat:no-repeat;
+    background-position: left 35% bottom 40%;
+    
 }
 .hot_keyword{
     font-size:1.2rem;
@@ -49,18 +68,103 @@ header h1{
     padding:6px 10px;
     color: var(--color-brown-300);
     border:1px solid var(--color-gray-400);
+    margin-bottom:12px;
 }
 /* carousel */
 .carousel{
+    background-image:url("../../assets/slides/houseware-downy.jpg"), url("../../assets/slides/houseware-dandruff.jpg");
     width:320px;
     height:631px;
+    position:relative;
 }
-
+.kitchenware .carousel{
+    background-image:url("../../assets/slides/kitchenware-tumbler.jpg"), url("../../assets/slides/kitchenware-lunchbox.jpg");
+}
+.slidebanner_text{
+    width:260px;
+    height:90px;
+    background-color: var(--color-brown-300);
+    color:var(--color-white);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    font-size:1.8rem;
+    position:absolute;
+    bottom:58px;
+    left:30px;
+}
+.point_description{
+    font-size:1.4rem;
+    margin-top:12px;
+}
+.kitchenware .slidebanner_text{
+    background-color: var(--color-green-700);
+}
+.indicator_group{
+    display:flex;
+    position:absolute;
+    bottom:22px;
+    left: 140px;
+}
+.circle_button{
+    width:12px;
+    height:12px;
+    border-radius: 50%;
+    background-color:  var(--color-gray-700);
+    margin: 0 4px;
+}
+.second_button{
+    background-color: var(--color-gray-600);
+}
+.right_section{
+    width:524px;
+    display:flex;
+    flex-wrap:wrap;
+    align-content:space-around;
+}
+.products_card{
+    width:524px;
+    display: flex;
+    flex-wrap:wrap;
+}
 .each_card{
-    display:inline-block;
+    display:block;
     width:160px;
     height:300px;
+    margin-left:14px;
+}
+.products_card:first-child::after{
+    content:"";
+    display:block;
+    width: 528px;
+    height: 0.5px;
+    background-color: var( --color-gray-600);
+}
+.card_img{
+    margin-bottom:12px;
 }
 .info{
+    display:block;
     font-size:1.4rem;
+    margin: 0 5px 12px 5px;
+}
+.prices{
+    display:flex;
+    flex-direction: column;
+    margin: 0 5px;
+}
+.price_type{
+    margin-bottom:4px;
+    font-size: 1.4rem;
+    color:var(--color-red-500);
+}
+.exact_price{
+    font-size:1.8rem;
+    font-weight:bold;
+}
+.won{
+    font-size:1.4rem;
+    margin:0 5px;
+    font-weight:400;
 }
