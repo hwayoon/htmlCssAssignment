@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>헤더 - 쿠팡(Coupang)</title>
+    <link rel="icon" href="./assets/favicon/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./stylesheets/main.css" />
+    <script src="./js/main.js" defer></script>
+  </head>
+
+  <body>
+    <div id="loginBar"></div>
+    <ul id="loginBarList">
+      <li>
+        <a href="#">로그인</a>
+      </li>
+      <li>
+        <a href="#">회원가입</a>
+      </li>
+      <li>
+        <a href="#">고객센터</a>
+      </li>
+      <li>
+        <a href="#">쿠팡플레이</a>
+      </li>
+      <li>
+        <a href="#">제휴마케팅</a>
+      </li>
+    </ul>
+    <button class="button--category">
+      <!-- iconHamburger 배경이미지로-->
+      카테고리
+    </button>
+
+    <div class="headerInner">
+      <a
+        href="https://www.coupang.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <h1 id="logo">coupang</h1>
+      </a>
+      <form action="">
+        <select name="categories" id="searchCategory"></select>
+        <input
+          type="search"
+          placeholder="찾고 싶은 상품을 검색해 보세요!"
+          required
+        />
+        <button
+          type="button"
+          class="voiceSearch"
+          aria-label="음성검색"
+        ></button>
+        <button
+          type="button"
+          class="keywordSearch"
+          aria-label="키워드검색"
+        ></button>
+      </form>
+      <div class="myCoupang">
+        <button class="myCoupangButton">마이쿠팡</button>
+        <ul>
+          <li>주문목록</li>
+          <li>취소/반품</li>
+          <li>찜리스트</li>
+        </ul>
+      </div>
+      <div class="cart">
+        <button class="cartButton">장바구니</button>
+        <div class="numberOfItems"></div>
+      </div>
+      <!-- cart -->
+    </div>
+  </body>
+</html>
