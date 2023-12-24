@@ -1,1 +1,204 @@
 /* 헤더 */
+body{
+    display:flex;
+    flex-direction: column;
+}
+header{
+    margin:auto;
+}
+#loginBarList{
+    display:flex;
+    margin:0 auto;
+    padding:10px 0;
+    background-color: var(--color-gray-100);
+}
+#loginBarList li:first-child{
+    order:3;
+    padding-right:8px;
+}
+#loginBarList li:nth-child(2){
+    order:4;
+    padding-right:8px;
+}
+#loginBarList li:nth-child(3){
+    order:5;
+    padding-right:8px;
+}
+#loginBarList li:nth-child(4){
+    order:1;
+    padding-left:8px;
+}
+#loginBarList li:last-child{
+    order:2;
+    padding-left:8px;
+    margin-right:744px;
+}
+.searchContent{
+    display:grid;
+    grid-template-areas:
+    "buttonCategory headInner myCoupang cart"
+    "buttonCategory typeNavigation myCoupang cart" ; 
+}
+button{
+    border:none;
+}
+.button--category{
+    background-color: var(--color-blue-600);
+    background-image:url('../../assets/icon/hamburger.svg');
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: center 30px;
+    width:110px;
+    height:116px;
+    color:var(--color-white);
+    padding-top:50px;
+    font-size:1.2rem;
+    grid-area:buttonCategory;
+}
+.headerInner{
+    grid-area: headInner;
+    display:flex;
+    justify-content:space-around;
+}
+#typeNavigation{
+    grid-area: typeNavigation;
+    padding:0;
+    margin:7px 0;
+}
+#logo{
+    background-image: url('../../assets/logo/logo.svg');
+    clip-path: inset(34px 0 0 0);
+    background-position-y:34px;
+    background-repeat: no-repeat;
+    background-size: 176px 40px;
+    height:74px;
+    width:176px;
+    margin:0;
+    color:var(--transparent);
+}
+form{
+    display:flex;
+    align-content:center;
+    align-self:flex-end;
+    border:1px solid var(--color-blue-600);
+    width:516px;
+    height:41px;
+}
+#searchCategory{
+    appearance: none;
+    width:135px;
+    height:40px;
+    padding-left:10px;
+    background-image: url('../../assets/icon/caret-down-fill.svg');
+    opacity:0.6;
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    border:none;
+    font-size:1.2rem;
+}
+#searchBar{
+    border:none;
+    width:300px;
+    padding-left:10px;
+    font-size:1.2rem;
+}
+.voiceSearch{
+    background-image: url('../../assets/icon/mic.svg');
+}
+.keywordSearch{
+    background-image: url('../../assets/icon/search.svg');
+}
+.voiceSearch, .keywordSearch{
+    width:40px;
+    height:40px;
+    background-repeat: no-repeat;
+    background-color:var(--transparent);
+    background-position: center;
+}
+.myCoupang{
+    grid-area:myCoupang;
+    align-self:center;
+    justify-self:center;
+    position:relative;
+}
+.cart{
+    grid-area: cart;
+    justify-self:center;
+    align-self:center;
+    position:relative;
+}
+.myCoupang ul{
+    padding:5px;
+    margin:0;
+    border:1px solid var(--color-gray-500);
+    position:absolute;
+    top:58px;
+    left:-3px;
+    width:85px;
+    background-color: var(--color-white);
+    text-align:center;
+}
+.myCoupang li{
+    margin:10px 10px;
+    font-size:1.2rem;
+}
+.myCoupang ul{
+    display:none;
+}
+.is--active ul{
+    display:initial;
+}
+.myCoupangButton,.cartButton{
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: var(--transparent);
+    width:58px;
+    height:58px;
+    font-size:1.2rem;
+    padding-top:30px;
+}
+.myCoupangButton{
+    background-image: url('../../assets/icon/my-coupang.svg');
+    margin-left:10px;
+    margin-right:10px;
+}
+.cartButton{
+    background-image: url('../../assets/icon/cart.svg');
+}
+.cartMessage{
+    font-size:1.2rem;
+    border:1px solid var(--color-gray-500);
+    padding:20px 30px;
+    background-color: var(--color-white);
+    position:absolute;
+    width:450%;
+    top:58px;
+    right:0;
+    text-align:center;
+    display:none;
+}
+.cart--empty .cartMessage{
+    display:initial;
+}
+li{
+    list-style:none;
+    font-size:1.2rem;
+}
+.numberOfItems{
+    width:18px;
+    height:18px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: var(--color-blue-600);
+    font-size: 1.2rem;
+    color:var(--color-white);
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    top:-10%;
+    right:15%;
+}
+#typeNavigation li{
+    display:inline-block;
+    padding: 6px 12px;
+}

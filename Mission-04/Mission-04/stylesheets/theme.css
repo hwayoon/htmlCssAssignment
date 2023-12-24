@@ -66,6 +66,7 @@
   --color-purple-700: #382373;
   --color-purple-800: #25174D;
   --color-purple-900: #130C26;
+  --transparent:rgba(255,255,255,0);
 
   --base-size: 10px;
   --font-family: 'Noto Sans KR', sans-serif;
