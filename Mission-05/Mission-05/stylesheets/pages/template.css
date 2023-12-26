@@ -1,0 +1,116 @@
+/* ---------------------------------------------- */
+/* 헤더                                            */
+/* ---------------------------------------------- */
+header{
+  border-bottom:1px solid var(--color-gray-200);
+}
+.header, .navigation{
+  width:1020px;
+  margin:auto;
+}
+.button--category{
+  background-color: var(--color-blue-600);
+  width:110px;
+  height:115px;
+  color:var(--color-white);
+  font-size:1.2rem;
+  padding:30px 25px 25px;
+  border:none;
+  display:flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items:center;
+}
+.button--category:focus{
+  outline:none;
+  box-shadow: 0 0 0 3px var(--color-red-500);
+  border-radius:5px;
+}
+/* ---------------------------------------------- */
+/* 내비게이션                                        */
+/* ---------------------------------------------- */
+i{
+  margin-right:5px;
+  font-size:1.6rem;
+}
+li{
+  display:flex;
+  align-items:center;
+  list-style:none;
+  font-size:1.2rem;
+  padding-top:7px;
+  padding-bottom:7px;
+  padding-left:20px;
+}
+.icon-theme+svg{
+  margin-left:5px;
+}
+.is--active .navigation__inner{
+  width:540px;
+  height:500px;
+  box-shadow:0px 2px 5px var(--color-gray-300);
+}
+.navigation__list{
+  width:180px;
+  height:500px;
+  margin:0;
+  padding:0;
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  position:relative;
+  box-shadow:0px 2px 5px var(--color-gray-300);
+}
+.depth2{
+  position:absolute;
+  left:180px;
+  top:0px;
+  width:180px;
+  height:500px;
+  margin:0;
+  padding-top:12px;
+  padding:0;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-shadow:0px 2px 5px var(--color-gray-300);
+}
+.depth3{
+  position:absolute;
+  left:180px;
+  top:0px;
+  width:180px;
+  height:500px;
+  margin:0;
+  padding:0;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-shadow:0px 2px 5px var(--color-gray-300);
+}
+.depth2, .depth3{
+  display:none;
+}
+.depth2 li, .depth3 li{
+  padding-top:7.5px;
+  padding-bottom:7.5px;
+}
+.depth2 li:first-child, .depth3 li:first-child{
+  margin-top:12px;
+}
+.is--active .depth2, .is--active .depth3{
+  display:initial;
+}
+
+/* ---------------------------------------------- */
+/* 메인 콘텐츠                                       */
+/* ---------------------------------------------- */
+/* 메인 콘텐츠 영역의 최소 높이 설정 */
+.main{
+  min-height: 52rem;
+}
+
+
+/* ---------------------------------------------- */
+/* 푸터                                            */
+/* ---------------------------------------------- */
