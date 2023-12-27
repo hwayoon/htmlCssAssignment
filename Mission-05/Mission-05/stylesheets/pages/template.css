@@ -11,7 +11,7 @@ header{
 .button--category{
   background-color: var(--color-blue-600);
   width:110px;
-  height:115px;
+  height:116px;
   color:var(--color-white);
   font-size:1.2rem;
   padding:30px 25px 25px;
@@ -92,14 +92,34 @@ li{
   display:none;
 }
 .depth2 li, .depth3 li{
-  padding-top:7.5px;
-  padding-bottom:7.5px;
+  padding-top:8px;
+  padding-bottom:9px;
 }
 .depth2 li:first-child, .depth3 li:first-child{
-  margin-top:12px;
+  margin-top:4px;
 }
 .is--active .depth2, .is--active .depth3{
   display:initial;
+}
+.is--active .navigation__list li:first-child:not(.is--active .depth3 li), 
+.is--active .navigation__list li:hover:first-child:not(.is--active .depth3 li),
+.is--active .navigation__list li:focus:first-child:not(.is--active .depth3 li){
+  background-image: url(../../assets/icon/more-right-active.svg);
+  background-repeat: no-repeat;
+  background-position: center right 13px;
+}
+.is--active .navigation__list [role="button"], .is--active .depth3 li:first-child, .is-active{
+  color:var(--color-blue-600);
+}
+.depth3 li:hover, .depth3 li:focus{
+  color:var(--color-blue-600);
+}
+.depth2::before, .depth3::before{
+  content:"";
+  height:500px;
+  display:flex;
+  border-left:1px solid var(--color-gray-300);
+  position:absolute;
 }
 
 /* ---------------------------------------------- */
@@ -114,3 +134,95 @@ li{
 /* ---------------------------------------------- */
 /* 푸터                                            */
 /* ---------------------------------------------- */
+footer{
+  color:var(--color-gray-800);
+}
+.customer_guide{
+  margin:auto;
+  background-color: var(--color-gray-200);
+  height:40px;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+.customer_guide_item{
+  font-size:1.2rem;
+  padding:5px 14px 6px;
+}
+.coupang_information{
+  display:flex;
+  height:207px;
+  justify-content: center;
+  font-size:1.6rem;
+  padding:32px 0;
+}
+.coupang_information_list, .coupang_information_center, .coupang_information_right{
+  display:flex;
+  flex-direction: column;
+}
+.logo, .coupang_information_list, .coupang_information_center{
+  margin-right:63px;
+}
+.logo{
+  background-image: url(../../assets/logo/logo-mono.svg);
+  background-repeat: no-repeat;
+  font-size:0px;
+  width:175px;
+  height:40px;
+}
+.info_list_item{
+  margin-bottom:12px;
+}
+.last_item{
+  margin-bottom:0;
+}
+.customer_service_center{
+  margin-bottom:4px;
+}
+#customer365{
+  padding-right:12px;
+  border-right:1px solid gray;
+}
+#cyber_center{
+  padding-left:10px;
+}
+.phone_number{
+  padding:5px 0;
+  margin-bottom:2px;
+  font-size:4.8rem;
+  font-weight:bold;
+}
+.paragraph{
+  width:282px;
+  margin:0;
+}
+.copyrightSNS{
+  position:relative;
+  display:flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: var(--color-gray-900);
+  padding:16px 0;
+}
+.copyrightSNSGroup{
+  width:860px;
+  height:70px;
+  font-size:1.2rem;
+  margin-right:48px;
+  display:flex;
+  flex-direction: column;
+  color:var(--color-gray-200);
+}
+.sns_links{
+  width:122px;
+  display:flex;
+  justify-content:space-evenly;
+}
+
+#instagram{
+  position:absolute;
+  width:34px;
+  height:34px;
+  background: linear-gradient(174.12deg, #2856EB 5.61%, #bc1888 22.32%, #cc2366 36.16%, #DC2743 51.91%, #E6683C 73.38%, #F09433 91.99%);
+  border-radius: 50%;
+}
