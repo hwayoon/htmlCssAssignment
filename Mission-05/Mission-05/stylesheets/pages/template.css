@@ -45,11 +45,11 @@ li{
 .icon-theme+svg{
   margin-left:5px;
 }
-.is--active .navigation__inner{
+/* .is--active .navigation__inner{
   width:540px;
   height:500px;
   box-shadow:0px 2px 5px var(--color-gray-300);
-}
+} */
 .navigation__list{
   width:180px;
   height:500px;
@@ -98,7 +98,16 @@ li{
 .depth2 li:first-child, .depth3 li:first-child{
   margin-top:4px;
 }
-.is--active .depth2, .is--active .depth3{
+/* .is--active .depth2{
+  display:initial;
+}
+.is--acitve .depth3{
+  display:initial;
+} */
+.depth2.is--active{
+  display:initial;
+}
+.depth3.is--active{
   display:initial;
 }
 .is--active .navigation__list li:first-child:not(.is--active .depth3 li), 
